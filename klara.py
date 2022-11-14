@@ -70,36 +70,28 @@ if lg == "FR" or lg =="fr" :
             u = order.find("sur")
             sr = order[s:u]
             webbrowser.open('https://www.google.com/search?q='+sr)
-        elif order.find("cherche sur google")!=-1:
-            sr = order[18:]
-            webbrowser.open('https://www.google.com/search?q='+sr)
+       
         #youtube
         elif order.find("cherche")!= -1 and order.find("youtube")!=-1 :
             s = order.index(" ")
             u = order.find("sur")
             sr = order[s:u]
             webbrowser.open('https://www.youtube.com/results?search_query='+ sr)
-        elif order.find("cherche sur youtube")!=-1:
-            sr = order[19:]
-            webbrowser.open('https://www.google.com/search?q='+sr)
+    
         #netflix
         elif order.find("cherche")!= -1 and order.find("netflix")!=-1 :
             s = order.index(" ")
             u = order.find("sur")
             sr = order[s:u]
             webbrowser.open('https://www.netflix.com/search?q='+ sr)
-        elif order.find("cherche sur netflix")!=-1:
-            sr = order[19:]
-            webbrowser.open('https://www.google.com/search?q='+sr)
+        
         #spotify
         elif order.find("cherche")!= -1 and order.find("spotify")!=-1 :
             s = order.index(" ")
             u = order.find("sur")
             sr = order[s:u]
             webbrowser.open ('https://open.spotify.com/search/'+ sr)
-        elif order.find("cherche sur spotify")!=-1:
-            sr = order[19:]
-            webbrowser.open('https://www.google.com/search?q='+sr)
+    
         #credit
         elif order == ("le crédit") or order==("qui est le realisateur de klara ?"):
             print("klara réalisé par Ryan Garmattou")
@@ -179,36 +171,27 @@ elif lg == "EN" or lg == "en":
             u = order.find("on")
             sr = order[s:u]
             webbrowser.open('https://www.google.com/search?q='+sr)
-        elif order.find("search on google")!=-1:
-            sr = order[16:]
-            webbrowser.open('https://www.google.com/search?q='+sr)
+        
         #youtube
         elif order.find("search")!= -1 and order.find("youtube")!=-1 :
             s = order.index(" ")
             u = order.find("on")
             sr = order[s:u]
             webbrowser.open('https://www.youtube.com/results?search_query='+ sr)
-        elif order.find("search on youtube")!=-1:
-            sr = order[17:]
-            webbrowser.open('https://www.google.com/search?q='+sr)
         #netflix
         elif order.find("search")!= -1 and order.find("netflix")!=-1 :
             s = order.index(" ")
             u = order.find("on")
             sr = order[s:u]
             webbrowser.open('https://www.netflix.com/search?q='+ sr)
-        elif order.find("search on netflix")!=-1:
-            sr = order[17:]
-            webbrowser.open('https://www.google.com/search?q='+sr)
+       
         #spotify
         elif order.find("search")!= -1 and order.find("spotify")!=-1 :
             s = order.index(" ")
             u = order.find("on")
             sr = order[s:u]
             webbrowser.open ('https://open.spotify.com/search/'+ sr)
-        elif order.find("search on spotify")!=-1:
-            sr = order[17:]
-            webbrowser.open('https://www.google.com/search?q='+sr)
+     
         #credit
         elif order == ("credit") or order==("who made klara ?"):
             print("klara directed by Ryan Garmattou")
