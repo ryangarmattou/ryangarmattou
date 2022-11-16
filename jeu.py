@@ -4,7 +4,7 @@ p = 0
 for  i in range (10):
 	x = int(input ("Donner un nombre 0 ou 1 ou 2: "))
 	y = random.randint (0,2)
-	print ("le choix de l'ai: ")
+	print ("le choix de l'ai: ",y)
 	if x+2 == y or x-2==y:
 		p = p+1
 	elif y+1 == x or y-1 == x:
